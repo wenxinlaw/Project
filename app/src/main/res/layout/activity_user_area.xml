@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sp.wow_x.UserAreaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/details_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvWelcomeMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tvCurrentPoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:text="Current Points:4"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recycle_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/bPaired"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paired Device"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="20dp"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="463dp" />
+
+                        <TextView
+                            android:id="@+id/tvDevices"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Devices Paired:"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="11dp"
+                            android:textSize="24sp"
+                            tools:layout_editor_absoluteX="7dp"
+                            tools:layout_editor_absoluteY="5dp" />
+
+                        <ListView
+                            android:id="@+id/lvPaired"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignEnd="@+id/bPaired"
+                            android:layout_alignRight="@+id/bPaired"
+                            android:layout_below="@+id/tvDevices"
+                            tools:layout_editor_absoluteY="35dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rewards_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="54dp">
+
+                        <TextView
+                            android:id="@+id/tvPneeded2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvRequirePoints2"
+                            android:layout_toEndOf="@+id/tvRequirePoints2" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="323dp"
+                            android:layout_marginEnd="220dp"
+                            app:srcCompat="@drawable/grab_logo" />
+
+                        <Button
+                            android:id="@+id/bRedeem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/imageView"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="37dp"
+                            android:layout_marginTop="190dp"
+                            android:text="Redeem" />
+
+                        <TextView
+                            android:id="@+id/tvgrab"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_alignBottom="@+id/imageView"
+                            android:layout_alignStart="@+id/bRedeem1"
+                            android:layout_marginBottom="24dp"
+                            android:text="10% discount of all rides" />
+
+                        <TextView
+                            android:id="@+id/tvReqPoints1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="30dp"
+                            android:text="Required Points:8" />
+
+                        <TextView
+                            android:id="@+id/tvPneeded1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvReqPoints1"
+                            android:layout_alignBottom="@+id/tvReqPoints1"
+                            android:layout_alignEnd="@+id/bRedeem1"
+                            android:layout_marginEnd="12dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvgrab"
+                            android:layout_toEndOf="@+id/tvgrab"
+                            app:srcCompat="@drawable/ntuc"
+                            tools:layout_editor_absoluteX="49dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvRequirePoints2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvPneeded1"
+                            android:layout_alignBottom="@+id/tvPneeded1"
+                            android:layout_toEndOf="@+id/bRedeem1"
+                            android:text="Required Points:12" />
+
+                        <TextView
+                            android:id="@+id/tvNtuc"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_alignTop="@+id/tvgrab"
+                            android:layout_marginStart="52dp"
+                            android:layout_toEndOf="@+id/bRedeem1"
+                            android:text="15% discount storewide" />
+
+                        <Button
+                            android:id="@+id/bRedeem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/tvNtuc"
+                            android:layout_alignTop="@+id/bRedeem1"
+                            android:text="Redeem" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>

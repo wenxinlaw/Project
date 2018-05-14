@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sp.wow_x.RewardTab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="323dp"
+            android:layout_marginEnd="220dp"
+            app:srcCompat="@drawable/grab_logo" />
+
+        <Button
+            android:id="@+id/bRedeem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="190dp"
+            android:text="Redeem" />
+
+        <TextView
+            android:id="@+id/tvgrab"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignStart="@+id/bRedeem1"
+            android:layout_marginBottom="24dp"
+            android:text="10% discount of all rides" />
+
+        <TextView
+            android:id="@+id/tvReqPoints1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="Required Points:8" />
+
+        <TextView
+            android:id="@+id/tvPneeded1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvReqPoints1"
+            android:layout_alignBottom="@+id/tvReqPoints1"
+            android:layout_alignEnd="@+id/bRedeem1"
+            android:layout_marginEnd="12dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvgrab"
+            android:layout_toEndOf="@+id/tvgrab"
+            app:srcCompat="@drawable/ntuc"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/tvRequirePoints2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPneeded1"
+            android:layout_alignBottom="@+id/tvPneeded1"
+            android:layout_toEndOf="@+id/bRedeem1"
+            android:text="Required Points:12" />
+
+        <TextView
+            android:id="@+id/tvNtuc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/tvgrab"
+            android:layout_marginStart="52dp"
+            android:layout_toEndOf="@+id/bRedeem1"
+            android:text="15% discount storewide" />
+
+        <Button
+            android:id="@+id/bRedeem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvNtuc"
+            android:layout_alignTop="@+id/bRedeem1"
+            android:text="Redeem" />
+
+        <TextView
+            android:id="@+id/tvPneeded2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvRequirePoints2"
+            android:layout_toEndOf="@+id/tvRequirePoints2" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

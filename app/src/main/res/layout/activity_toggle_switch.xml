@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sp.wow_x.ToggleSwitch">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tvPlastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/switch1"
+            android:layout_marginEnd="51dp"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="Plastic" />
+
+        <TextView
+            android:id="@+id/tvAlum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/switch1"
+            android:layout_marginStart="46dp"
+            android:layout_toEndOf="@+id/switch1"
+            android:text="Aluminium" />
+
+        <Button
+            android:id="@+id/bGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/bFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bGo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="82dp"
+            android:text="Finish" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
